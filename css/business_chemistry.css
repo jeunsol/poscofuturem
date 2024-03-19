@@ -1,0 +1,290 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	display: block;
+	color: #111;
+}
+h3{
+	font-size: 30px;
+}
+h4{
+	font-size: 24px;
+	color:#fff;
+}
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* .visual */
+.visual{
+	width:100%;
+	height:520px;
+	position:relative;
+}
+.slide-group{
+	width:100%;
+	height:520px;
+	position:relative;
+}
+.slide{
+	position:absolute;
+}
+.slide:nth-child(1){
+	background-image:url("../img/visual7.jpg");
+	background-size:cover;
+	width:100%;
+	height:520px;
+}
+.slide:nth-child(2){
+	background-image:url("../img/visual8.jpg");
+	background-size:cover;
+	background-position: center;
+	width:100%;
+	height:520px;
+}
+
+.visual_txt{
+	width:1300px;
+	padding-top: 300px;
+	position: absolute;
+	left: 14%;
+	z-index: 1;
+}
+.visual_txt h2{
+	color:#fff;
+	font-size: 40px;
+}
+.visual_txt p{
+	color:#fff;
+	font-size: 15px;
+	opacity: 50%;
+	padding-top: 5px;
+}
+	
+	
+/* .section_cont1 */
+.section_cont1{
+	width: 1300px;
+	margin: 0 auto;
+	margin-top: 200px;
+	
+}
+.navigation{
+	width: 400px;
+	height: 50px;
+	margin: 0 auto;
+}
+.navigation > li{
+	float: left;
+	margin-right: 30px;
+	width: 100px;
+	height: 30px;
+}
+.navigation > li > a{
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+	
+span.line2{
+	width:100%;
+	height:2px;
+	display:block;
+	margin-top: 5px;
+}
+span.line2::after{ 
+	content:"";
+	display:block;
+	width:100%;
+	height:2px;
+	background:#005891;
+}
+span.line3{
+	width:0%;
+	height:2px;
+	display:block;
+	margin-top: 5px;
+}
+span.line3::after{ 
+	content:"";
+	display:block;
+	width:100%;
+	height:2px;
+	background:#005891;
+}
+ul.navigation > li:hover .line3{
+	width:100%;
+}
+	
+.section_cont1 > div{
+	background: url(../img/sub2_bg2.jpg) no-repeat;
+	width: 1300px;
+	height: 500px;
+	background-size: cover;
+	border-radius: 30px;
+	margin-top: 50px;
+}
+	
+	
+/* .section_cont2 */
+.section_cont2{
+	width: 1300px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.left p{
+	font-size: 15px;
+	width:840px;
+	margin-top: 30px;
+}
+.right{
+	background: url(../img/sub2_icon2.png) no-repeat;
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+	float: right;
+	margin-top: -100px;
+	margin-right: 10px;
+}
+	
+	
+/* .section_cont3 */
+.section_cont3{
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.wrap{
+	width: 1300px;
+	height: 400px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.wrap > div{
+	position: absolute;
+}
+.first{
+	background: url(../img/sub2_img4.jpg) no-repeat;
+	width: 320px;
+	height: 350px;
+	background-size: cover;	
+	left:0;
+}
+	.first .cover{
+		background-color:rgba(0,0,0,0.3);
+		width: 320px;
+		height: 350px;
+	}
+.second{
+	background: url(../img/sub2_img5.jpg) no-repeat;
+	width: 600px;
+	height: 350px;
+	background-size: cover;
+	transform: translateX(58%);
+}
+.cover{
+	background-color:rgba(0,0,0,0.5);
+	width: 600px;
+	height: 350px;
+}
+.cover > div{
+	width: 500px;
+	margin: 0 auto;
+	padding-top: 60px;
+}
+.third{
+	background: url(../img/sub2_img6.jpg) no-repeat;
+	width: 320px;
+	height: 350px;
+	background-size: cover;	
+	right:0;
+}
+	.third .cover{
+		background-color:rgba(0,0,0,0.3);
+		width: 320px;
+		height: 350px;
+	}
+p.tit{
+	color:#fff;
+	font-size:16px;
+	position: absolute;
+	bottom: 20px;
+	left:20px;
+}
+p.sub{
+	color:#fff;
+	font-size: 15px;
+	padding-top: 40px;
+}
+	
+	
+/* footer */
+footer{
+	width: 100%;
+	height: 280px;
+	background-color:#2d2d2d;
+}
+.ft_inner{
+	width: 1350px;
+	margin: 0 auto;
+	position: relative;
+}
+.ft_left{
+	background: url("../img/logo.png") no-repeat;
+	width: 100px;
+	height: 100px;
+	background-size: contain;
+	position: absolute;
+	margin-top: 100px;
+}
+	
+.ft_center{
+	position: absolute;
+	left:50%;
+	margin-left: -300px;
+	margin-top: 100px;
+}
+.ft_btn a{
+	float: left;
+	font-size: 15px;
+	color: #fff;
+	padding-right: 35px;
+}
+.ft_txt{
+	margin-top: 50px;
+	position: absolute;
+}
+.ft_txt p{
+	color: #999;
+	font-size: 14px;
+}
+.ft_txt p:first-child{
+	padding-bottom: 5px;
+}
+	
+.ft_right{
+	float: right;
+	margin-top: 100px;
+}
+div.ft_right > select{
+	appearance:none;
+	width:155px;
+	height:36px;
+	color:#bbb;
+	border:1px solid #999;
+	border-radius:30px;
+	background:url("../img/select_arrow.png") no-repeat 87% 50%;
+	padding:0 20px;
+	box-sizing:border-box;
+	cursor: pointer;
+}

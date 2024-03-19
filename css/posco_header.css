@@ -1,0 +1,322 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* header */
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+header > .inner-wrap { 
+	width: 1400px;
+	height: 160px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between; 
+}
+span.hide-txt{
+	display: none;
+}
+h1.logo img{
+	position: absolute;
+	width: 100px;
+	top:60px;
+}
+nav {
+	width: 1000px;
+	padding-top: 50px;
+	padding-left: 20px;
+}
+
+.sub-bg { 
+	width: 100%;
+	height: 350px;
+	display: none;
+	top: 118px;
+	left: 0px;
+	background-color: #fff;
+	position: absolute; 
+	z-index: 90; 
+}
+
+.menu > li {
+	float: left;
+	width: 160px;
+	-background-color: #ccc;
+	text-align: center;
+	position: relative;
+}
+.menu > li:hover {
+	-background-color: gray;
+}
+.menu > li > a {
+	padding: 20px 0;
+	color: #fff;
+	font-weight: 600;
+}
+.menu > li > a:hover {
+	-background-color: orange;
+	-color: #fff;
+}
+
+.submenu {
+	position: absolute;
+	width: 100%;
+	z-index: 91; 
+	display: none;
+	padding-top: 25px;
+}
+.submenu li {
+	text-align: center;
+}
+.submenu li a {
+	color: #333;
+	padding: 10px;
+}
+.submenu li a:hover {
+	-color: yellow;
+	-background-color: lightblue;
+	color:#005891;
+}
+
+div.btn{
+	position: relative;
+	top:70px;
+}
+div.btn_lang{
+	background: url(../img/lang_sub.png) no-repeat;
+	width:20px;
+	height:20px;
+	background-size: cover;
+	position: absolute;
+	right: 50px;
+}
+.btn_lang:hover{
+	cursor: pointer;
+}
+.btn_lang:hover > .lang_bg{
+	display: block;
+}
+div.lang_bg{
+	background-color: #fff;
+	border-radius: 10px;
+	width: 60px;
+	height: 80px;
+	position: relative;
+	top: 40px;
+	right: 20px;
+	display: none;
+}
+div.lang_bg ul{
+	position: relative;
+	left: 13px;
+	top:12px;
+	-display: none;
+}
+div.lang_bg ul > li{
+	padding-bottom: 5px;
+}
+#sitemap{
+	background: url(../img/sitemap_f.png) no-repeat;
+	width:20px;
+	height:20px;
+	background-size: cover;
+	position: absolute;
+	right: 0;
+}
+#sitemap:hover{
+	cursor: pointer;
+}
+
+span.line{
+	width:0%;
+	height:3px;
+	display:block;
+	margin:0px auto 0px;
+	-transition:width 1s;
+}
+span.line::after{ 
+	content:"";
+	display:block;
+	width:100%;
+	height:3px;
+	background:#fff;
+}
+ul.menu > li:hover span.line{
+	width:100%;
+}
+	
+header.on{
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	background-color: #fff;
+}
+.menu li a.on{
+	color:#111;
+}
+.btn_lang.on{
+	background: url(../img/lang.png) no-repeat;
+	width:20px;
+	height:20px;
+	background-size: cover;
+	position: absolute;
+	right: 50px;
+}
+#sitemap.on{
+	background: url(../img/sitemap.png) no-repeat;
+	width:20px;
+	height:20px;
+	background-size: cover;
+	position: absolute;
+	right: 0;
+}
+.logo img.on{
+	content: url(../img/logo_h.png);
+}
+.line.on::after{ 
+	content:"";
+	display:block;
+	width:100%;
+	height:3px;
+	background:#005891;
+}
+header.in{
+	border-bottom: 1px solid #eee;
+}
+	
+#sitemapInner.open{
+	display: block;
+}
+#sitemapInner{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+}
+#sitemapInner > div{ /* bg보이게 */
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: table;
+	width: 100%;
+	height: 100%;
+	table-layout: fixed;
+}
+.sitemap_bg{
+	width: 100%;
+	height: 100%;
+	background: url(../img/sitemap_bg3.jpg) no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+}
+.sitemap_txt{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	position: relative;
+}
+
+.area{
+	margin: 0 auto;
+	padding: 0px 200px;
+}
+.area > div{
+	position: relative;
+}
+.area h2{
+	font-size: 60px;
+	color: #fff;
+	margin-bottom: 80px;
+}
+.txt_up{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	top: 30px;
+}
+.area button{
+	background-color: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 18px;
+	color: #333;
+	border: none;
+	cursor: pointer;
+}
+.area button i{
+	background: url(../img/close.png) no-repeat;
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	display: block;
+	position: absolute;
+	top: -5px;
+	right: -6px;
+}
+
+.sitemap-1dep{
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	margin-bottom: 100px;
+}
+.sitemap-1dep > li{
+	padding: 20px 3%;
+	display: table-cell;
+	vertical-align: top;
+	border-left: 1px solid rgba(255,255,255,0.2);
+	text-align: left;
+}
+.sitemap-1dep > li:last-child{
+	border-right: 1px solid rgba(255,255,255,0.2);
+}
+.sitemap-1dep h3{
+	font-size: 30px;
+	color: #fff;
+	margin-bottom: 40px;
+}
+.sitemap-2dep li a{
+	font-size: 17px;
+	color: rgba(255,255,255,0.8);
+	padding: 8px 0px;
+}
+    
+    
+    
+@media (max-width: 1420px) {
+    header >.inner-wrap{
+        width: 97%;
+    }
+}
+
+@media (max-width: 1199px) {
+    nav{
+        width: 85%;
+    }
+}
+    
+@media (max-width: 1190px) {
+    nav{
+        display: none;
+    }
+}
+
+
+

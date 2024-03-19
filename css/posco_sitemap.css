@@ -1,0 +1,132 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	display: block;
+	color: #111;
+}
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	overflow-x:hidden;
+}
+
+
+/* header */
+#sitemapInner{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+#sitemapInner > div{ /* bg보이게 */
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: table;
+	width: 100%;
+	height: 100%;
+	table-layout: fixed;
+}
+.sitemap_bg{
+	width: 100%;
+	height: 100%;
+	background: url(../img/sitemap_bg3.jpg) no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+}
+.sitemap_txt{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	position: relative;
+}
+
+.area{
+	margin: 0 auto;
+	padding: 0px 200px;
+}
+.area > div{
+	position: relative;
+}
+.area h2{
+	font-size: 60px;
+	color: #fff;
+	margin-bottom: 80px;
+}
+.txt_up{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	top: 30px;
+}
+.area button{
+	background-color: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 18px;
+	color: #333;
+	border: none;
+	cursor: pointer;
+}
+.area button i{
+	background: url(../img/close.png) no-repeat;
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	display: block;
+	position: absolute;
+	top: -5px;
+	right: -6px;
+}
+
+.sitemap-1dep{
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	margin-bottom: 100px;
+}
+.sitemap-1dep > li{
+	padding: 20px 3%;
+	display: table-cell;
+	vertical-align: top;
+	border-left: 1px solid rgba(255,255,255,0.2);
+	text-align: left;
+}
+.sitemap-1dep > li:last-child{
+	border-right: 1px solid rgba(255,255,255,0.2);
+}
+.sitemap-1dep h3{
+	font-size: 30px;
+	color: #fff;
+	margin-bottom: 40px;
+}
+.sitemap-2dep li a{
+	font-size: 17px;
+	color: rgba(255,255,255,0.8);
+	padding: 8px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
